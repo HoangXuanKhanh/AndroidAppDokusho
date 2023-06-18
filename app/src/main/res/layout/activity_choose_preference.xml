@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ui.activity.ChoosePreferenceActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/condense_medium"
+        android:text="@string/text_hello_new"
+        android:textColor="#437993"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20sp"
+        android:gravity="start"
+        android:text="@string/text_choose"
+        android:textColor="#141414"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_save"
+        android:layout_below="@+id/text_view_2"
+        android:layout_marginTop="30dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/text_view_save"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_above="@+id/text_view_skip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bgr_buy_coin"
+        android:fontFamily="@font/cabin_bold"
+        android:gravity="center"
+        android:text="@string/btn_save"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_skip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/cabin_regular"
+        android:gravity="center"
+        android:text="@string/text_quite"
+        android:textColor="#437993"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="83dp"
+    android:background="@drawable/bgr_shimmer"
+    android:layout_margin="10dp"
+    android:layout_height="26dp">
+
+</androidx.constraintlayout.widget.ConstraintLayout>

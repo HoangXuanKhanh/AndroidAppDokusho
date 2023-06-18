@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/bgr_search"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_success"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_faile" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_provision"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="@string/text_status_4"
+        android:textColor="#437993"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/relative_layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgr_buy_coin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_buy_coin"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_coin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_amount_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:gravity="center"
+            android:text="500 xu"
+            android:textColor="@color/color_gradient_400"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:gravity="center"
+            android:text="$ 0.99"
+            android:textStyle="normal"
+            android:textColor="@color/color_green"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

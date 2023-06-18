@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_dokuso"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.ui.activity.ChoosePreferenceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ui.home.story.content.ContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ui.home.story.comment.CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ui.home.story.chapter.ChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ui.home.story.detail.DetailStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ui.profile.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ui.profile.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="haken.dokemi.andoku.ui.ui.home.story.buycoin.BuyCoinActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.MainHomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_home">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ui.home.story.buycoin.BuyCoinActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_main">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_buy_coin_back"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="49dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_buy_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/image_buy_coin_back"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:text="@string/text_buy_coin"
+            android:textColor="@color/color_green"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/re_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="22dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/bgr_buy_coin">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:text="@string/text_current_coin"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_view_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:text="@string/text_99_coin"
+                android:textColor="@color/color_green"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_add_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re_layout"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/iciel_gotham_medium"
+        android:text="@string/text_add_coin"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_buy_coin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_term_policy"
+        android:layout_below="@+id/text_view_add_coin"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_term_policy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/cabin_bold"
+        android:gravity="center"
+        android:text="@string/text_terms_policy"
+        android:textColor="@color/color_green"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:fontFamily="@font/iciel_gotham_medium" />
+
+</RelativeLayout>
