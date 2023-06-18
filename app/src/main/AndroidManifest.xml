@@ -24,7 +24,6 @@
         <activity
             android:name=".ui.ui.activity.ChoosePreferenceActivity"
             android:exported="false" />
-
         <activity
             android:name=".ui.ui.home.story.content.ContentActivity"
             android:exported="false" />
